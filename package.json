@@ -1,0 +1,19 @@
+{
+  "name": "codewars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "function": "nodemon ./js/03-function.js",
+    "string": "nodemon ./js/02-string.js",
+    "numbers": "nodemon ./js/01-number.js",
+    "dev": "nodemon",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Rasa",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
