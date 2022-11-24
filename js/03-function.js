@@ -428,13 +428,194 @@
 // }
 // console.log(digitize(2, 3, 4, 6));
 
-function numbers(str) {
-  let doubleLetter = '';
-  for (let i = 0; i < str.length; i++) {
-    doubleLetter += str[i];
+// function numbers(str) {
+//   let doubleLetter = '';
+//   for (let i = 0; i < str.length; i++) {
+//     doubleLetter += str[i];
+//   }
+//   return str;
+// }
+
+
+// console.log(str('338143541012587690953963229531676155968368623409571396164529725919094651568441655040727279902581731469359614862433951046700639416548444916152903821351486231'));
+
+// function points(games) {
+//   let sum = [];
+//   for (let i = 0; i < games.length; ++i) {
+
+//     if (games[i][0] > (games[i][2])) {
+//       sum.unshift(3);
+
+//     } else if (games[i][0] == (games[i][2])) {
+//       sum.unshift(1);
+//     } else if (games[i][0] < (games[i][2])) {
+//       sum.unshift(0);
+//     }
+
+
+//   }
+//   return sum;
+
+// };
+
+// console.log(points(["0:1", "0:2", "0:3", "0:4", "1:2", "10:3", "1:4", "2:3", "2:4", "3:4"]), 0);
+// console.log(points(["1:0", "2:0", "3:0", "4:0", "2:1", "35:1", "4:1", "3:2", "4:2", "4:3"]), 30);
+// console.log(points(["1:0", "2:0", "3:0", "4:0", "27:1", "1:3", "1:4", "2:3", "2:4", "3:4"]), 15);
+// console.log(points(["1:0", "2:0", "3:50", "4:4", "2:2", "3:63", "1:4", "2:63", "2:4", "3:4"]), 12);
+// function points(games) {
+//   let sum = 0;
+//   for (let i = 0; i < games.length; ++i) {
+
+//     if (games[i][0] > (games[i][2])) {
+//       sum += 3;
+
+//     } else if (games[i][0] == (games[i][2])) {
+//       sum += 1;
+//     } else if (games[i][0] < (games[i][2])) {
+//       sum += 0;
+//     }
+
+//   }
+//   return sum;
+
+// };
+
+// console.log(points(["0:1", "0:2", "0:3", "0:4", "1:2", "1:3", "1:4", "2:3", "2:4", "3:4"]), 0);
+// console.log(points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"]), 30);
+// console.log(points(["1:0", "2:0", "3:0", "4:0", "2:1", "1:3", "1:4", "2:3", "2:4", "3:4"]), 15);
+// console.log(points(["1:0", "2:0", "3:0", "4:4", "2:2", "3:63", "1:4", "2:3", "2:4", "3:4"]), 12);
+// // let sum = [] duos toki atsakyma , o jei sum = 0
+// 0000000000 0
+// 3333333333 30
+// 3333300000 15
+// 3331100000 12
+// o jei sum = 0; parasysi, tai duo toki atsakyma
+// 0 0
+// 30 30
+// 15 15
+// 11 12
+
+// function sumMix(x) {
+
+//   function sumMix(x) {
+
+//     let sum = 0;
+//     for (let i = 0; i < x.length; i++) {
+//       sum = sum + (+x[i]);
+//     }
+//     return sum;
+//   }
+// };
+// console.log(sumMix([9, 3, '7', '3']), 22);
+// console.log(sumMix(['5', '0', 9, 3, 2, 1, '9', 6, 7]), 42);
+// console.log(sumMix(['3', 6, 6, 0, '5', 8, 5, '6', 2, '0']), 41);
+
+
+
+// function twoHighest(arr) {
+
+//   arr.sort(function (a, b) { return b - a });
+//   return `${arr[0]}, ${arr[1]}`;
+// }
+// console.log(twoHighest([15, 20, 2, 17]), [20, 17]);
+
+// function twoSort(s) {
+//   s.sort();
+//   return s[0].split("").join("***");
+
+
+
+// function random() {
+
+//   let all = [];
+//   for (let i = 0; i < 10; ++i) {
+//     const numbers = Math.round(Math.random() * 10) + 1;
+//     all.push(numbers);
+//   }
+//   return all;
+// }
+
+
+
+// console.log(random());
+
+// let number = Math.trunc(Math.random() * 10) + 1;
+// console.log(number);
+
+// function getRandomIntInclusive(min, max) {
+//   min = Math.ceil(min);
+//   max = Math.floor(max);
+//   return Math.floor(Math.random() * (max - min + 1) + min); // The maximum is inclusive and the minimum is inclusive
+// }
+
+// const a = [...Array(10)].map(() => getRandomIntInclusive(1, 11));
+
+
+// console.log(a);
+
+
+// function randomArray() {
+//   let rand = [];
+//   for (i = 1; i <= 10; i++) {
+//     const x = Math.round(Math.random() * 10) + 1;
+//     rand.push(x);
+//   }
+
+//   return rand;
+// }
+//
+// console.log(randomArray());
+
+function friend(friends) {
+  const result = friends.filter(best => best.length == 4);
+
+  return result;
+}
+
+function friend(friends) {
+  //your code here
+  var realFriends = [];
+  for (i = 0; i < friends.length; i++) {
+    if (friends[i].length == 4 && isNaN(friends[i])) {
+      realFriends.push(friends[i]);
+    }
   }
-  return str;
+
+  return realFriends
 }
 
 
-console.log(str('338143541012587690953963229531676155968368623409571396164529725919094651568441655040727279902581731469359614862433951046700639416548444916152903821351486231'));
+function removeEveryOther(arr) {
+  let ats = [];
+  for (let i = 0; i < arr.length; i += 2) {
+    ats.push(arr[i]);
+  }
+  return ats;
+}
+
+
+function invert(array) {
+
+  return array.map(num => {
+    return num * -1
+  })
+}
+
+function invert(array) {
+  var newArr = [];
+  for (var i = 0; i < array.length; i++) {
+    newArr.push(-array[i]);
+  }
+  return newArr;
+}
+
+function nameSuffle(str) {
+  return str.split(' ').reverse().join(' ')
+}
+
+function filter_list(l) {
+  return l.filter(function (n) { return typeof n == 'number' })
+}
+function filter_list(l) {
+  return l.filter(v => typeof v == "number")
+}

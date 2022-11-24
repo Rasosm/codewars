@@ -21,14 +21,15 @@
 //     return list[0];
 // }
 
-function position(letter) {
-  const letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
-  const letterLowercase = letter.toLowerCase();
-  const position = letters.indexOf(letterLowercase) + 1;
-  return `Position of alphabet: ${position}`;
-}
+// function position(letter) {
+//   const letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
+//   const letterLowercase = letter.toLowerCase();
+//   const position = letters.indexOf(letterLowercase) + 1;
+//   return `Position of alphabet: ${position}`;
+// }
 
-function position(letter) {
-  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
-  return 'Position of alphabet: ' + (alphabet.indexOf(letter) + 1);
-}
+// function position(letter) {
+//   const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+//   return 'Position of alphabet: ' + (alphabet.indexOf(letter) + 1);
+// }
+

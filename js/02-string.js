@@ -1,5 +1,5 @@
 // Write a function "greet" that returns "hello world!"
-// 
+//
 // function reverseString(str) {
 // let ats = '';
 // for (let i = str.length - 1; i >= 0; i = i - 1) {
@@ -10,14 +10,14 @@
 // }
 
 // console.log(reverseString('abcdef'));
-// 
+//
 // Hello, <name> how are you doing today?
 // function greet(name){
 //   const resultStr = `Hello ${name} how are you doing today?`;
 //   return resultStr;
 // }
 // console.log(greet("Rasa"));
-// 
+//
 // function removeChar(str) {
 //  let Str1 = ''
 //     for(let i = 1; i < str.length - 1; i = i + 1) {
@@ -40,12 +40,12 @@
 // }
 // console.log(removeChar("Saule"));
 
-// // 
+// //
 // function doubleChar(str) {
 //   let doubleLetter = '';
 //   for (let i = 0; i < str.length; i++) {
 //     doubleLetter += str[i] + str[i];
-//   }   
+//   }
 //   // }
 //   return doubleLetter;// return ats;// Your code here
 // }
@@ -131,7 +131,7 @@
 // }
 // console.log(abbrevName('Nojus Kvedra'));
 // gausis N.K
-// 
+//
 // function digitize(n) {
 //   return n.toString().split('').reverse().map(Number);
 // }
@@ -217,15 +217,35 @@
 //   }
 // }
 
-let getMax = function (str) {
-  const number = '338143541012587690953963229531676155968368623409571396164529725919094651568441655040727279902581731469359614862433951046700639416548444916152903821351486231'
-  let max = 0,
-    maxChar = '';
-  str.split('').forEach(function (char) {
-    if (str.split(char).length + 1 > max) {
-      max = str.split(char).length;
-      maxChar = char;
-    }
-  });
-  return maxChar;
+// let getMax = function (str) {
+//   const number = '338143541012587690953963229531676155968368623409571396164529725919094651568441655040727279902581731469359614862433951046700639416548444916152903821351486231'
+//   let max = 0,
+//     maxChar = '';
+//   str.split('').forEach(function (char) {
+//     if (str.split(char).length + 1 > max) {
+//       max = str.split(char).length;
+//       maxChar = char;
+//     }
+//   });
+//   return maxChar;
+// // };
+// const pasikartojimai = new Array(100).fill(0);
+// const input = '338143541012587690953963229531676155968368623409571396164529725919094651568441655040727279902581731469359614862433951046700639416548444916152903821351486231';
+// const pasikartojimai = [];
+// for (let i = 0; i < input.length - 1; ++i) {
+//   const number = input[i] + input[i + 1];
+//   pasikartojimai[+number]++;
+// }
+// let
+// console.log(pasikartojimai);
+
+function removeExclamationMarks(s) {
+
+  return s.split('!').join('');
 };
+console.log(removeExclamationMarks('Hello World!'));
+
+function correct(string) {
+  return string.replace('1', 'I').replace('0', 'O').replace('5', 'S').replace('0', 'O')
+
+}
