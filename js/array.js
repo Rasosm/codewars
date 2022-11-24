@@ -105,17 +105,59 @@ console.log(walletSmall, walletBig);
 
 // 9. 
 const oneWallet = [walletSmall, walletBig];
-
-console.log(walletSmall, walletBig);
+// wallet.push(oneWallet);
+console.log(oneWallet);
 // 10.
-const mixWallet = [...oneWallet, ['KIKA', 'Euro Vaistinė', 'Drogas', 'Ačiū', 'Lietuvos Geležinkeliai', 'Mano RIMI']];
-console.log(mixWallet);
+const cardsWallet = ['KIKA', 'Euro Vaistinė', 'Drogas', 'Ačiū', 'Lietuvos Geležinkeliai', 'Mano RIMI'];
+oneWallet.push(cardsWallet);
+console.log(oneWallet);
 // let cards = ['KIKA', 'Euro Vaistinë', 'Drogas', 'Aèiû', 'Lietuvos Geleþinkeliai', 'Mano RIMI'];
 // bigPurse.push(cards)
 
 // 11.
-// mixWallet[2].sort();
-// console.log(mixWallet);
+cardsWallet.sort();
+console.log(cardsWallet);
 
 // // 12.
 // mix
+
+// 13.
+// 14.
+let lotteryWallet = [];
+
+for (let i = 0; i < 10; i++) {
+    lotteryWallet.push(Math.floor(Math.random() * (9999999999 - 1000000000 + 1) + 1000000000));
+}
+oneWallet.push(lotteryWallet);
+console.log(oneWallet);
+
+// 15.
+lotteryWallet.sort((a, b) => b - a);
+
+console.log(lotteryWallet);
+
+// 16.
+// console.log(walletBig);
+
+// let newWalletBig = [...walletBig];
+
+
+// newWalletBig.push(Math.floor(Math.random() * (10 - 3 + 1) + 3));
+// console.log(newWalletBig);
+// 17. 
+let happyPeople = 0;
+
+for (let i = 0; i < lotteryWallet.length; ++i) {
+
+    if (lotteryWallet[i] % 777 === 0) {
+        happyPeople++;
+    }
+
+}
+console.log(happyPeople);
+
+// 18. 
+const animalWallet = ['šuo', 'katė', 'automobilis', 'namas', 'kiemas'];
+oneWallet.push(animalWallet);
+
+console.log(oneWallet);

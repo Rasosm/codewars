@@ -10,9 +10,9 @@ function hi(say, n) {
 }
 console.log(hi('labas ', 5));
 
-// 3. 
-function integer(num) {
-    if (num % 2 === 0) {
-        return
-    }
-}
+// 3.
+// function integer(num) {
+//     if (num % 2 === 0) {
+//         return
+//     }
+// }
