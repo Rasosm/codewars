@@ -119,9 +119,33 @@ cardsWallet.sort();
 console.log(cardsWallet);
 
 // // 12.
-// mix
+
+const bankVisa = 'Visa';
+const bankMaster = 'MasterCard';
+for (let i = cardsWallet.length; i < 20; ++i) {
+    cardsWallet.push(Math.floor(Math.random() * 2));
+
+    if (cardsWallet[i] == 0) {
+        cardsWallet[i] = bankVisa;
+    } else {
+        cardsWallet[i] = bankMaster;
+    }
+}
+
+console.log(cardsWallet);
 
 // 13.
+const allVisa = cardsWallet.filter(item => item == 'Visa');
+console.log(allVisa);
+const allMaster = cardsWallet.filter(item => item == 'MasterCard');
+console.log(allMaster);
+console.log(allVisa.length, allMaster.length);
+if (allMaster.length > allVisa.length) {
+    console.log('MasterCard');
+} else {
+    console.log('Visa');
+}
+
 // 14.
 let lotteryWallet = [];
 
@@ -145,15 +169,12 @@ console.log(lotteryWallet);
 // newWalletBig.push(Math.floor(Math.random() * (10 - 3 + 1) + 3));
 // console.log(newWalletBig);
 // 17. 
-let happyPeople = 0;
 
-for (let i = 0; i < lotteryWallet.length; ++i) {
+let happyWallet = lotteryWallet.filter(item => item % 777 === 0);
 
-    if (lotteryWallet[i] % 777 === 0) {
-        happyPeople++;
-    }
+console.log(happyWallet);
 
-}
+const happyPeople = happyWallet.length;
 console.log(happyPeople);
 
 // 18. 
@@ -161,3 +182,10 @@ const animalWallet = ['šuo', 'katė', 'automobilis', 'namas', 'kiemas'];
 oneWallet.push(animalWallet);
 
 console.log(oneWallet);
+
+animalWallet.sort((a, b) => a.length - b.length);
+console.log(animalWallet);
+
+
+
+

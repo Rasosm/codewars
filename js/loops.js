@@ -58,8 +58,8 @@ function getRndInteger(min, max) {
 }
 console.log(getRndInteger(5, 10));
 // 3.
-
-for (let i = 0; i = 5; ++i) {
-    text += 'labas';
+const x = 'labas';
+for (let i = 0; i <= 4; ++i) {
+    console.log(x);
 }
-console.log(text);
+

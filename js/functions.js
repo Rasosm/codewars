@@ -1,8 +1,9 @@
 1.
-function text() {
-    return 'Labas';
+function text(n) {
+    return n;
 }
-console.log(text());
+
+console.log(text('labas'));
 
 // 2.
 function hi(say, n) {
